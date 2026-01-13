@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "usernamehw.errorlens",
+    "mikestead.dotenv",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "yoavbls.pretty-ts-errors"
+  ],
+  "unwantedRecommendations": [
+    "hookyqr.beautify",
+    "esbenp.prettier-vscode-legacy"
+  ]
+}
