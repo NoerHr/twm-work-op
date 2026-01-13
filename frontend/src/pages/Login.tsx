@@ -5,8 +5,6 @@ import { useThemeStore } from '../store/themeStore';
 import { Eye, EyeOff, Mail, Lock, Chrome, Zap } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { toast } from 'sonner@2.0.3';
-import { SignUp } from './SignUp';
-import { ForgotPassword } from './ForgotPassword';
 
 type AuthView = 'login' | 'signup' | 'forgot-password';
 
@@ -96,15 +94,6 @@ export function Login() {
       toast.success(`Logged in with ${provider}! 🚀`);
     }, 1500);
   };
-
-  // Show different views based on state
-  if (authView === 'signup') {
-    return <SignUp onSwitchToLogin={() => setAuthView('login')} />;
-  }
-
-  if (authView === 'forgot-password') {
-    return <ForgotPassword onBackToLogin={() => setAuthView('login')} />;
-  }
 
   return (
     <div className="min-h-screen w-full relative overflow-hidden bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 transition-colors duration-500">
@@ -300,13 +289,6 @@ export function Login() {
                     />
                     <span className="text-sm text-slate-700 dark:text-white/80">Remember me</span>
                   </label>
-                  <button
-                    type="button"
-                    onClick={() => setAuthView('forgot-password')}
-                    className="text-sm text-purple-600 dark:text-purple-400 hover:underline"
-                  >
-                    Forgot password?
-                  </button>
                 </div>
 
                 {/* Login Button */}
@@ -362,17 +344,6 @@ export function Login() {
                   </button>
                 </div>
               </div>
-
-              {/* Sign Up Link */}
-              <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/60">
-                Don't have an account?{' '}
-                <button
-                  onClick={() => setAuthView('signup')}
-                  className="text-purple-600 dark:text-purple-400 hover:underline"
-                >
-                  Sign up
-                </button>
-              </p>
             </div>
 
             {/* Demo Credentials Info */}

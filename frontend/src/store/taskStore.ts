@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { getAllBatchTasks } from '../utils/createBatchProcessingTasks';
 
 export interface TaskExecution {
   id: string;
@@ -89,6 +90,7 @@ interface TaskStore {
 
 // Mock data for demo
 const MOCK_TASKS: TaskExecution[] = [
+  ...getAllBatchTasks(), // Add 5 batch processing tasks
   {
     id: 'task-001',
     workflowId: 'wf-001',
