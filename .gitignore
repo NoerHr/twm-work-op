@@ -1,0 +1,8 @@
+# Abaikan semua file root
+/*
+
+# Kecuali folder frontend
+!/frontend/
+
+# Kecuali file .gitignore ini sendiri
+!.gitignore
