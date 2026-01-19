@@ -1,4 +1,4 @@
-import { ChevronRight, Bell, Search, Moon, Sun, LogOut } from 'lucide-react';
+import { ChevronRight, Search, Moon, Sun, LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { useThemeStore } from '../../store/themeStore';
@@ -6,7 +6,7 @@ import { GlassCard } from '../ui/GlassCard';
 import { NotificationCenter } from './NotificationCenter';
 import { GlobalSearch } from '../GlobalSearch';
 import { useState } from 'react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface TopBarProps {
   breadcrumbs?: { label: string; path: string }[];

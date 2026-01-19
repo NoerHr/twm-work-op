@@ -254,14 +254,14 @@ export function NotificationCenter() {
                   </div>
 
                   {unreadCount > 0 && (
-                    <Button 
+                    <button 
                       variant="ghost" 
                       size="sm"
                       onClick={markAllAsRead}
                       className="w-full"
                     >
                       Mark all as read
-                    </Button>
+                    </button>
                   )}
                 </div>
 
