@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Clock, CheckCircle2, AlertTriangle, XCircle, ArrowRight, RefreshCw, Target, Package, BarChart3, MessageSquare } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import type { ReviewRequest, Vote, GateReviewData, RoutingOption } from '../../types/governance';
 import { motion } from 'motion/react';
 import { toast } from 'sonner@2.0.3';

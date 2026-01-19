@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, Save } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { useUserStore, type UserProfile } from '../../store/userStore';
 import type { UserRole } from '../../store/authStore';
 

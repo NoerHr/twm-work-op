@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, Save, Edit3 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { useIndicatorStore } from '../../store/indicatorStore';
 import { toast } from 'sonner@2.0.3';
 import type { IndicatorDefinition } from '../../types/indicator';

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Calendar, Paperclip, X, AlertCircle, UserPlus, Users } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Input } from '../../ui/Input';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Input } from '../../ui/input';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import type { ProjectDetails, ProjectPriority } from '../../../types/project';
 
 interface DetailsTabProps {

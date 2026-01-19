@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Send, MessageSquare } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import type { Assignment } from '../../../types/assignment';
 
 interface DiscussTabProps {

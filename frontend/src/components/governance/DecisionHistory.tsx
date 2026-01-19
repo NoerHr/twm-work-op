@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { CheckCircle2, XCircle, X, Calendar, User, FileText, Filter } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import type { DecisionHistory as DecisionHistoryType } from '../../types/governance';
 
 interface DecisionHistoryProps {

@@ -16,8 +16,8 @@ import {
 import { useAuthStore } from '../store/authStore';
 import { useUserStore } from '../store/userStore';
 import { GlassCard } from '../components/ui/GlassCard';
-import { Button } from '../components/ui/Button';
-import { Badge } from '../components/ui/Badge';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import type { UserProfile, UserRole } from '../types/auth';
 
 // Role and Status Colors

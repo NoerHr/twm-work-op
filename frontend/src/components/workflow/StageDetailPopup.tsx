@@ -14,7 +14,7 @@ import {
   Link2
 } from 'lucide-react';
 import { useWorkflowStore, type WorkflowNode } from '../../store/workflowStore';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { GlassCard } from '../ui/GlassCard';
 
 interface StageDetailPopupProps {

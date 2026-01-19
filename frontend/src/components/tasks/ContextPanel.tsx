@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Eye, EyeOff, Copy, Check, Database } from 'lucide-react';
 import { toast } from 'sonner@2.0.3';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 
 interface ContextPanelProps {
   inputContext: Record<string, any>;

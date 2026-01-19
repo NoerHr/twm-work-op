@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FileText, Download, Calendar, Filter, CheckCircle, TrendingUp, Users, BarChart3 } from 'lucide-react';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import { toast } from 'sonner@2.0.3';
 import { useAuthStore } from '../../store/authStore';
 

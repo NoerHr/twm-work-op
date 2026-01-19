@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Plus, GripVertical, Edit, Trash2, Type, Hash, ToggleLeft, Calendar, List, Link } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
-import { Input } from '../../ui/Input';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
+import { Input } from '../../ui/input';
 import type { FieldSchema, FieldType } from '../../../types/resource';
 
 interface SchemaBuilderProps {

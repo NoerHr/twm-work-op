@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Plus, Trash2, ChevronDown } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Badge } from '../ui/Badge';
-import { Button } from '../ui/Button';
+import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
 import type { LocalValue, LogicBlockRoot, OperatorType } from '../../types/indicator';
 
 interface LogicBlockEditorProps {

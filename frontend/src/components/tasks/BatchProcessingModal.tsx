@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { X, ChevronRight, SkipForward, CheckCircle, AlertCircle, Clock, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import type { TaskInstance, BatchQueueItem } from '../../types/task';
 import { useToast } from '../../hooks/useToast';
 

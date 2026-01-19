@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { ChevronDown, Plus, Edit2, Trash2, Users, X, Check, Search, Calendar, Package } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Input } from '../../ui/Input';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Input } from '../../ui/input';
+import { Badge } from '../../ui/badge';
 import type { Assignment, Stage, AssignmentResource, AssignmentLeader } from '../../../types/project';
 import type { ProjectResourceType } from '../../../types/resource';
 

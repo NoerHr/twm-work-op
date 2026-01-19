@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { CheckCircle2, XCircle, ChevronLeft, ChevronRight, List, Grid } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 
 interface BatchConfig {
   columns: Array<{ key: string; label: string; type: string }>;

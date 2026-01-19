@@ -18,8 +18,8 @@ import {
   ArrowUpDown
 } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import type { Project, Assignment, WorkflowStage } from '../../types/project';
 
 interface AssignmentManagementProps {

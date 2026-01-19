@@ -1,9 +1,9 @@
 import { useState, useCallback } from 'react';
 import { Plus, Play, Trash2, Settings, GitBranch, Edit, ZoomIn, ZoomOut } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
-import { Input } from '../../ui/Input';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
+import { Input } from '../../ui/input';
 import { SimulationModal } from './SimulationModal';
 import type { OperationDefinition, FieldSchema, LogicBlock, Connection, BlockType, OperationParameter } from '../../../types/resource';
 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { AlertTriangle, CheckCircle2, Info, XCircle, TrendingUp, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { ChangeAnalysis } from '../../lib/breakingChangeDetector';
 
 interface BreakingChangeDialogProps {

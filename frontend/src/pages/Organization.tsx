@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { Building2, Users, Package, ArrowRight, Sparkles } from 'lucide-react';
 import { GlassCard } from '../components/ui/GlassCard';
-import { Badge } from '../components/ui/Badge';
-import { Button } from '../components/ui/Button';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
 
 export function Organization() {
   const navigate = useNavigate();

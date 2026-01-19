@@ -21,8 +21,8 @@ import { useProjectStore } from '../../store/projectStore';
 import { useResourceStore } from '../../store/resourceStore';
 import { useReviewStore } from '../../store/reviewStore';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { ProgressBar } from '../ui/ProgressBar';
 import type { Project } from '../../types/project';
 

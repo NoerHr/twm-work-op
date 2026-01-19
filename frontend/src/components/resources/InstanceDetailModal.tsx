@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { X, Save, History, Link as LinkIcon, Play } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
-import { Input } from '../ui/Input';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
+import { Input } from '../ui/input';
 import type { ResourceInstance, ResourceType, OperationDefinition } from '../../types/resource';
 
 interface InstanceDetailModalProps {

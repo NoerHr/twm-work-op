@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { Briefcase, TrendingUp, AlertCircle, Clock, CheckCircle, ChevronRight, Users } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
-import { Button } from '../../ui/Button';
+import { Badge } from '../../ui/badge';
+import { Button } from '../../ui/button';
 import { motion } from 'motion/react';
 import { useProjectStore } from '../../../store/projectStore';
 import { useAuthStore } from '../../../store/authStore';

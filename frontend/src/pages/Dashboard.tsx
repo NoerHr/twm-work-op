@@ -1,6 +1,6 @@
 import { useAuthStore } from '../store/authStore';
 import { motion } from 'motion/react';
-import { Badge } from '../components/ui/Badge';
+import { Badge } from '../components/ui/badge';
 import { DashboardView } from '../components/projects/dashboard';
 
 export function Dashboard() {

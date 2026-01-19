@@ -1,7 +1,7 @@
 import { Shield, Clock, AlertTriangle, CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 
 interface SLAMetrics {
   onTime: number;

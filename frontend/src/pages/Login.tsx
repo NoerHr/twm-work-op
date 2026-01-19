@@ -3,7 +3,7 @@ import { useAuthStore, UserRole } from '../store/authStore';
 import { useUserStore } from '../store/userStore';
 import { useThemeStore } from '../store/themeStore';
 import { Eye, EyeOff, Mail, Lock, Chrome, Zap } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { toast } from 'sonner@2.0.3';
 
 type AuthView = 'login' | 'signup' | 'forgot-password';
