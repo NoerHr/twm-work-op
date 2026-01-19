@@ -5,7 +5,6 @@ import type {
   ProjectStatus,
   Stage,
   Assignment,
-  Indicator,
   IndicatorConnection,
   ProjectResourceType,
   ChangeRequest,
@@ -168,7 +167,7 @@ export const useProjectStore = create<ProjectStore>()(
         get().updateProject(id, { status: 'active' });
       },
       
-      rejectProject: (id, reason) => {
+      rejectProject: (id, _reason) => {
         get().updateProject(id, { 
           status: 'draft',
           // Store rejection reason in a change request or governance review
@@ -327,8 +326,12 @@ export const useProjectStore = create<ProjectStore>()(
       
       assignLeader: (projectId, assignmentId, leaderId, leaderName) => {
         get().updateAssignment(projectId, assignmentId, {
-          leaderId,
-          leaderName
+          leaders: [{
+            id: leaderId,
+            name: leaderName,
+            role: 'Lead',
+            allocation: 100
+          }]
         });
       },
       
@@ -503,7 +506,7 @@ export const useProjectStore = create<ProjectStore>()(
         const assignments: Assignment[] = [];
         get().projects.forEach((project) => {
           project.assignments.forEach((assignment) => {
-            if (assignment.leaderId === leaderId) {
+            if (assignment.leaders.some(l => l.id === leaderId)) {
               assignments.push(assignment);
             }
           });

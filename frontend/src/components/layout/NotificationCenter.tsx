@@ -1,10 +1,11 @@
 // Notification Center Component - Manages system notifications
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Bell, Check, X, Trash2, AlertCircle, CheckCircle, Info, TrendingUp } from 'lucide-react';
+import { Bell, X, Trash2, AlertCircle, CheckCircle, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
 import { Badge } from '../ui/Badge';
+import { Button } from '../ui/Button';
 import { formatDistanceToNow } from 'date-fns';
 
 interface Notification {
@@ -72,7 +73,7 @@ export function NotificationCenter() {
         actionPath: '/projects'
       };
 
-      setNotifications(prev => [newNotification, ...prev]);
+      setNotifications((prev: Notification[]) => [newNotification, ...prev]);
     };
 
     const handleProjectSubmitted = (e: any) => {
@@ -89,7 +90,7 @@ export function NotificationCenter() {
         actionPath: '/approvals'
       };
 
-      setNotifications(prev => [newNotification, ...prev]);
+      setNotifications((prev: Notification[]) => [newNotification, ...prev]);
     };
 
     // ⚡ PHASE 5: Listen for indicator automation events
@@ -107,7 +108,7 @@ export function NotificationCenter() {
         actionPath: '/indicators'
       };
 
-      setNotifications(prev => [newNotification, ...prev]);
+      setNotifications((prev: Notification[]) => [newNotification, ...prev]);
     };
 
     const handleThresholdBreached = (e: any) => {
@@ -124,7 +125,7 @@ export function NotificationCenter() {
         actionPath: '/indicators'
       };
 
-      setNotifications(prev => [newNotification, ...prev]);
+      setNotifications((prev: Notification[]) => [newNotification, ...prev]);
     };
 
     const handleHierarchyAggregated = (e: any) => {
@@ -141,7 +142,7 @@ export function NotificationCenter() {
         actionPath: '/indicators'
       };
 
-      setNotifications(prev => [newNotification, ...prev]);
+      setNotifications((prev: Notification[]) => [newNotification, ...prev]);
     };
 
     window.addEventListener('project-decision', handleProjectDecision);

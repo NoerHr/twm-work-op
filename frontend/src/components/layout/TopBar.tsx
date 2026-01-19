@@ -1,4 +1,4 @@
-import { ChevronRight, Bell, Search, Moon, Sun, LogOut } from 'lucide-react';
+import { ChevronRight, Search, Moon, Sun, LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { useThemeStore } from '../../store/themeStore';
@@ -6,7 +6,7 @@ import { GlassCard } from '../ui/GlassCard';
 import { NotificationCenter } from './NotificationCenter';
 import { GlobalSearch } from '../GlobalSearch';
 import { useState } from 'react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface TopBarProps {
   breadcrumbs?: { label: string; path: string }[];
@@ -65,7 +65,7 @@ export function TopBar({ breadcrumbs = [] }: TopBarProps) {
         </button>
 
         {/* Notifications - ⚡ PHASE 4 PART 2: Notification Center */}
-        <NotificationCenter onNavigate={navigate} />
+        <NotificationCenter />
 
         {/* User Profile */}
         <div className="relative">
@@ -136,7 +136,6 @@ export function TopBar({ breadcrumbs = [] }: TopBarProps) {
       {/* Global Search Modal */}
       {showGlobalSearch && (
         <GlobalSearch
-          onNavigate={navigate}
           onClose={() => setShowGlobalSearch(false)}
         />
       )}

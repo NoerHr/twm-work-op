@@ -16,7 +16,7 @@ import { AssignmentDemo } from './pages/AssignmentDemo';
 import { ProtectedRoute } from './components/routing/ProtectedRoute';
 import { useAuthStore } from './store/authStore';
 import { useThemeStore } from './store/themeStore';
-import { Toaster } from 'sonner@2.0.3';
+import { Toaster } from 'sonner';
 
 export default function App() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);

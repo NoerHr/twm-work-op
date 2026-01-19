@@ -6,3 +6,7 @@
 
 # Kecuali file .gitignore ini sendiri
 !.gitignore
+
+# Ignore node_modules in frontend
+frontend/node_modules/
+

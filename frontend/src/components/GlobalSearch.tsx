@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, X, TrendingUp, CheckCircle, Package, BarChart3, FileText } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
-import { GlassCard } from './ui/GlassCard';
 import { Badge } from './ui/Badge';
 import { useProjectStore } from '../store/projectStore';
 import { useTaskStore } from '../store/taskStore';
@@ -20,7 +18,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
 
   const projects = useProjectStore((state) => state.projects);
   const tasks = useTaskStore((state) => state.tasks);
-  const resources = useResourceStore((state) => state.resources);
+  const resources = useResourceStore((state) => state.resourceInstances);
   const indicators = useIndicatorStore((state) => state.indicators);
 
   useEffect(() => {
@@ -31,18 +29,17 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
   // Search across all entities
   const searchResults = query.trim() ? {
     projects: projects.filter(p => 
-      p.name.toLowerCase().includes(query.toLowerCase()) ||
-      p.description?.toLowerCase().includes(query.toLowerCase())
+      p.details.name.toLowerCase().includes(query.toLowerCase()) ||
+      p.details.description?.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 5),
     tasks: tasks.filter(t => 
-      t.title.toLowerCase().includes(query.toLowerCase()) ||
-      t.description?.toLowerCase().includes(query.toLowerCase())
+      t.workflowName.toLowerCase().includes(query.toLowerCase()) ||
+      t.assignmentName?.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 5),
-    resources: resources.filter(r => 
-      r.name.toLowerCase().includes(query.toLowerCase()) ||
-      r.description?.toLowerCase().includes(query.toLowerCase())
+    resources: resources.filter((r: { name: string }) => 
+      r.name.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 5),
-    indicators: indicators.filter(i => 
+    indicators: indicators.filter((i: { name: string; description?: string }) => 
       i.name.toLowerCase().includes(query.toLowerCase()) ||
       i.description?.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 5),
@@ -79,7 +76,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
   }, [selectedIndex, totalResults, allResults]);
 
   const handleSelectResult = (result: any) => {
-    const { type, data } = result;
+    const { type } = result;
     
     switch (type) {
       case 'project':
@@ -203,7 +200,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                     <div className="px-3 py-2 text-xs text-slate-500 dark:text-white/50 font-semibold uppercase">
                       Projects ({searchResults.projects.length})
                     </div>
-                    {searchResults.projects.map((project, index) => {
+                    {searchResults.projects.map((project) => {
                       const globalIndex = allResults.findIndex(r => r.type === 'project' && r.data.id === project.id);
                       return (
                         <button
@@ -222,13 +219,13 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 mb-1">
                                 <p className="text-slate-900 dark:text-white font-medium truncate">
-                                  {project.name}
+                                  {project.details.name}
                                 </p>
                                 <Badge variant="secondary" className="text-xs">{getTypeBadge('project')}</Badge>
                               </div>
-                              {project.description && (
+                              {project.details.description && (
                                 <p className="text-sm text-slate-600 dark:text-white/60 truncate">
-                                  {project.description}
+                                  {project.details.description}
                                 </p>
                               )}
                             </div>
@@ -245,7 +242,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                     <div className="px-3 py-2 text-xs text-slate-500 dark:text-white/50 font-semibold uppercase">
                       Tasks ({searchResults.tasks.length})
                     </div>
-                    {searchResults.tasks.map((task, index) => {
+                    {searchResults.tasks.map((task) => {
                       const globalIndex = allResults.findIndex(r => r.type === 'task' && r.data.id === task.id);
                       return (
                         <button
@@ -264,13 +261,13 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 mb-1">
                                 <p className="text-slate-900 dark:text-white font-medium truncate">
-                                  {task.title}
+                                  {task.workflowName}
                                 </p>
                                 <Badge variant="secondary" className="text-xs">{getTypeBadge('task')}</Badge>
                               </div>
-                              {task.description && (
+                              {task.assignmentName && (
                                 <p className="text-sm text-slate-600 dark:text-white/60 truncate">
-                                  {task.description}
+                                  {task.assignmentName}
                                 </p>
                               )}
                             </div>
@@ -287,7 +284,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                     <div className="px-3 py-2 text-xs text-slate-500 dark:text-white/50 font-semibold uppercase">
                       Resources ({searchResults.resources.length})
                     </div>
-                    {searchResults.resources.map((resource, index) => {
+                    {searchResults.resources.map((resource) => {
                       const globalIndex = allResults.findIndex(r => r.type === 'resource' && r.data.id === resource.id);
                       return (
                         <button
@@ -310,11 +307,6 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                                 </p>
                                 <Badge variant="secondary" className="text-xs">{getTypeBadge('resource')}</Badge>
                               </div>
-                              {resource.description && (
-                                <p className="text-sm text-slate-600 dark:text-white/60 truncate">
-                                  {resource.description}
-                                </p>
-                              )}
                             </div>
                           </div>
                         </button>
@@ -329,7 +321,7 @@ export function GlobalSearch({ onClose }: GlobalSearchProps) {
                     <div className="px-3 py-2 text-xs text-slate-500 dark:text-white/50 font-semibold uppercase">
                       Indicators ({searchResults.indicators.length})
                     </div>
-                    {searchResults.indicators.map((indicator, index) => {
+                    {searchResults.indicators.map((indicator) => {
                       const globalIndex = allResults.findIndex(r => r.type === 'indicator' && r.data.id === indicator.id);
                       return (
                         <button
