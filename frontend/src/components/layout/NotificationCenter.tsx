@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Bell, Check, X, Trash2, AlertCircle, CheckCircle, Info, TrendingUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import { formatDistanceToNow } from 'date-fns';
 
 interface Notification {
@@ -254,14 +254,14 @@ export function NotificationCenter() {
                   </div>
 
                   {unreadCount > 0 && (
-                    <Button 
+                    <button 
                       variant="ghost" 
                       size="sm"
                       onClick={markAllAsRead}
                       className="w-full"
                     >
                       Mark all as read
-                    </Button>
+                    </button>
                   )}
                 </div>
 

@@ -16,7 +16,7 @@ import {
   Clock
 } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import type { UserRole } from '../../types/user';
 
 interface WorkflowGuideProps {

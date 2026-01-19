@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Plus, Play, AlertCircle, CheckCircle2, GitBranch, Edit, Trash2, Clock, User } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import type { Assignment } from '../../../types/assignment';
 
 interface TaskTabProps {

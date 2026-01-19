@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { AlertTriangle, X } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Input } from '../../ui/Input';
+import { Button } from '../../ui/button';
+import { Input } from '../../ui/input';
 
 interface IssueReportModalProps {
   onSubmit: (reason: string, description: string, severity: string) => void;

@@ -1,8 +1,8 @@
 import { X, Calendar, User, Tag, Clock, FileText } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import type { TaskInstance } from '../../types/task';
 
 interface TaskPreviewModalProps {

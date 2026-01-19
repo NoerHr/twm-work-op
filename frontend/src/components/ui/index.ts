@@ -13,8 +13,8 @@
  * import { Button, Badge, GlassCard, Input } from '../ui';
  * 
  * // ✅ ALSO CORRECT - Direct imports (preferred for tree-shaking)
- * import { Button } from '../ui/Button';
- * import { Badge } from '../ui/Badge';
+ * import { Button } from '../ui/button';
+ * import { Badge } from '../ui/badge';
  * import { GlassCard } from '../ui/GlassCard';
  * ```
  * 
@@ -91,7 +91,7 @@ export { useMobile } from './use-mobile';
  * 2. IMPORT PATTERNS:
  *    Prefer direct imports for better tree-shaking:
  *    ```tsx
- *    import { Button } from '../ui/Button';  // ✅ Best
+ *    import { Button } from '../ui/button';  // ✅ Best
  *    import { Button } from '../ui';         // ✅ Also OK
  *    ```
  * 

@@ -9,9 +9,9 @@ import {
   XCircle,
   AlertTriangle
 } from 'lucide-react';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import { toast } from 'sonner@2.0.3';
 
 interface ConditionEditorModalProps {

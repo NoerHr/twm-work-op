@@ -10,8 +10,8 @@ import {
   Play
 } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import { IndicatorSetup } from './IndicatorSetup';
 import { ResourceMapping } from './ResourceMapping';
 import type { Project } from '../../../types/project';

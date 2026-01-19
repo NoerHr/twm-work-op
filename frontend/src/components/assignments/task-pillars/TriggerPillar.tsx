@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Zap, Clock, User, Users, Calendar } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
-import { Input } from '../../ui/Input';
+import { Badge } from '../../ui/badge';
+import { Input } from '../../ui/input';
 import type { TaskTrigger } from '../../../types/assignment';
 
 interface TriggerPillarProps {

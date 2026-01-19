@@ -1,8 +1,8 @@
 import { Calendar, DollarSign, Target, TrendingUp, AlertCircle, CheckCircle2, Clock, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
-import { Button } from '../ui/Button';
+import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
 import type { Assignment } from '../../types/assignment';
 
 interface AssignmentCardProps {

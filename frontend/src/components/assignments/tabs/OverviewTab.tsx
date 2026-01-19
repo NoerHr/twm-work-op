@@ -1,6 +1,6 @@
 import { Calendar, Users, Target, TrendingUp } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 import type { Assignment } from '../../../types/assignment';
 
 interface OverviewTabProps {

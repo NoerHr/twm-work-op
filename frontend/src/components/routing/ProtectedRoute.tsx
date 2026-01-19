@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthStore, UserRole } from '../../store/authStore';
 import { AlertTriangle } from 'lucide-react';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { GlassCard } from '../ui/GlassCard';
 
 interface ProtectedRouteProps {

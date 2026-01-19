@@ -1,6 +1,6 @@
 import { Shield, TrendingUp, AlertTriangle, CheckCircle, Activity } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 import { motion } from 'motion/react';
 import { useGovernanceStore } from '../../../store/governanceStore';
 

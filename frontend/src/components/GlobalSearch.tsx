@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search, X, TrendingUp, CheckCircle, Package, BarChart3, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GlassCard } from './ui/GlassCard';
-import { Badge } from './ui/Badge';
+import { Badge } from './ui/badge';
 import { useProjectStore } from '../store/projectStore';
 import { useTaskStore } from '../store/taskStore';
 import { useResourceStore } from '../store/resourceStore';

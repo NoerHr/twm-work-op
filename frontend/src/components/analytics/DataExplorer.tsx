@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Download, Filter, Search, Calendar } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { useIndicatorStore } from '../../store/indicatorStore';
 import { format } from 'date-fns';
 import type { IndicatorDataPoint, IndicatorLevel } from '../../types/indicator';

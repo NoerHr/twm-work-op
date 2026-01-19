@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { useThemeStore } from '../store/themeStore';
 import { Settings as SettingsIcon, User, Bell, Lock, Palette, Save, Edit2, X, FileText } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { ReportsTab } from '../components/settings/ReportsTab';
 import { toast } from 'sonner@2.0.3';
 

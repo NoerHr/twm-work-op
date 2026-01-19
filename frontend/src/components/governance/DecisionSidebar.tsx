@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { CheckCircle2, XCircle, X, MessageSquare, AlertCircle, Lock } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import type { ReviewRequest, Vote, ChecklistItem } from '../../types/governance';
 import { motion, AnimatePresence } from 'motion/react';
 import { toast } from 'sonner@2.0.3';

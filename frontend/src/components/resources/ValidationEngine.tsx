@@ -1,6 +1,6 @@
 import { CheckCircle2, AlertCircle, AlertTriangle, Info, ChevronRight } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import { motion, AnimatePresence } from 'motion/react';
 import { Field } from './FieldSchemaDesigner';
 

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Plus, Target, Database, TrendingUp, Layers, Search, Edit, Trash2, Eye, Calculator, BarChart3, AlertCircle, Lock } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { LogicStudio } from './LogicStudio';
 import { useIndicatorStore } from '../../store/indicatorStore';
 import { useAuthStore } from '../../store/authStore';

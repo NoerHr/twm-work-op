@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, Save, CheckCircle, AlertTriangle, FileText } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import type { TaskInstance } from '../../types/task';
 import { useToast } from '../../hooks/useToast';
 

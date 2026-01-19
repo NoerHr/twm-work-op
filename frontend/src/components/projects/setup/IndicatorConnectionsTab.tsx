@@ -11,8 +11,8 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import { toast } from 'sonner@2.0.3';
 import type { Project, Assignment, Indicator } from '../../../types/project';
 import type { IndicatorConnection } from '../../../types/resource';

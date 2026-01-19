@@ -8,7 +8,7 @@ import { ProjectCreationWizard } from '../components/projects/ProjectCreationWiz
 import { ProjectWorkspace } from '../components/projects/ProjectWorkspace';
 import { WorkflowGuideModal } from '../components/projects/WorkflowGuideModal';
 import { Clock, BookOpen, Sparkles, X } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { GlassCard } from '../components/ui/GlassCard';
 import { submitProjectForApproval, canSubmitProject, notifyBODOfSubmission } from '../utils/projectGovernanceIntegration';
 import { createCompleteWorkflowDemo, getWorkflowGuide } from '../utils/createCompleteWorkflowDemo';

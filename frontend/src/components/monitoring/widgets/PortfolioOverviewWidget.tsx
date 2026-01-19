@@ -1,6 +1,6 @@
 import { Briefcase, TrendingUp, AlertCircle, Clock, DollarSign, Users, Activity } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 import { motion } from 'motion/react';
 import { useProjectStore } from '../../../store/projectStore';
 

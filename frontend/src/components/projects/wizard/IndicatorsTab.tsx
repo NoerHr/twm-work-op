@@ -3,9 +3,9 @@ import { Plus, Target, Trash2, Link as LinkIcon, Circle, GripVertical, ZoomIn, Z
 import { motion } from 'motion/react';
 import { toast } from 'sonner@2.0.3';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
-import { Input } from '../../ui/Input';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
+import { Input } from '../../ui/input';
 import { useIndicatorStore } from '../../../store/indicatorStore';
 import type { Indicator, Assignment, Stage } from '../../../types/project';
 import type { IndicatorDefinition } from '../../../types/indicator';

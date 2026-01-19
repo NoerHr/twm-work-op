@@ -16,9 +16,9 @@ import {
   Users,
   Target
 } from 'lucide-react';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import type { Project } from '../../types/project';
 
 interface ActiveProjectDashboardProps {

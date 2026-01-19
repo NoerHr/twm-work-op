@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Clock, AlertTriangle, CheckCircle2, Target, Users, DollarSign, Calendar, ArrowRight } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import type { ReviewRequest } from '../../types/governance';
 import { motion } from 'motion/react';
 

@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { useGovernanceStore } from '../../../store/governanceStore';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
 import { CheckCircle, XCircle, AlertCircle, ChevronRight, FileCheck } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { motion } from 'motion/react'; // Fixed: change from framer-motion to motion/react

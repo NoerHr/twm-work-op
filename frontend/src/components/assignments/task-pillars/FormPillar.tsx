@@ -5,9 +5,9 @@ import { arrayMove, SortableContext, sortableKeyboardCoordinates, verticalListSo
 import { CSS } from '@dnd-kit/utilities';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Button } from '../../ui/Button';
-import { Badge } from '../../ui/Badge';
-import { Input } from '../../ui/Input';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
+import { Input } from '../../ui/input';
 import type { TaskForm, FormField, FormFieldType, BatchConfig } from '../../../types/assignment';
 
 interface FormPillarProps {

@@ -1,6 +1,6 @@
 import { AlertCircle, AlertTriangle, Info, X } from 'lucide-react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 import { useIndicatorStore } from '../../../store/indicatorStore';
 import { formatDistanceToNow } from 'date-fns';
 import type { WidgetConfig } from '../../../types/indicator';

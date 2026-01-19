@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { X, Save, AlertCircle, Info, Zap, Database, GitBranch, Package } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
 import { Node } from '@xyflow/react';
 
 export interface NodeConfig {

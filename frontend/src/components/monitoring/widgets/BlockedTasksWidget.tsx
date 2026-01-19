@@ -1,7 +1,7 @@
 import { AlertOctagon, Clock, User } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GlassCard } from '../../ui/GlassCard';
-import { Badge } from '../../ui/Badge';
+import { Badge } from '../../ui/badge';
 
 interface BlockedTask {
   id: string;

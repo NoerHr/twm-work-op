@@ -3,9 +3,9 @@ import { ArrowLeft, Save, AlertTriangle, Send, Eye, EyeOff, Copy, Check } from '
 import { motion } from 'motion/react';
 import { toast } from 'sonner@2.0.3';
 import { GlassCard } from '../ui/GlassCard';
-import { Button } from '../ui/Button';
-import { Badge } from '../ui/Badge';
-import { Input } from '../ui/Input';
+import { Button } from '../ui/button';
+import { Badge } from '../ui/badge';
+import { Input } from '../ui/input';
 import { useTaskStore } from '../../store/taskStore';
 import { ContextPanel } from './ContextPanel';
 import { BatchFieldWidget } from './BatchFieldWidget';
