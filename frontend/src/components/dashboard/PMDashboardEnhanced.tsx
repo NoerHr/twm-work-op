@@ -19,11 +19,11 @@ import { motion } from 'motion/react';
 import { useAuthStore } from '../../store/authStore';
 import { useProjectStore } from '../../store/projectStore';
 import { useResourceStore } from '../../store/resourceStore';
-import { useReviewStore } from '../../store/reviewStore';
+import { useGovernanceStore } from '../../store/governanceStore';
 import { GlassCard } from '../ui/GlassCard';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
-import { ProgressBar } from '../ui/ProgressBar';
+
 import type { Project } from '../../types/project';
 
 interface PMDashboardEnhancedProps {
@@ -35,7 +35,7 @@ export function PMDashboardEnhanced({ onCreateProject }: PMDashboardEnhancedProp
   const user = useAuthStore((state) => state.user);
   const projects = useProjectStore((state) => state.projects);
   const allocations = useResourceStore((state) => state.allocations);
-  const reviews = useReviewStore((state) => state.reviews);
+  const reviews = useGovernanceStore((state) => state.reviews);
 
   const [filterPriority, setFilterPriority] = useState<'all' | 'critical' | 'high' | 'medium' | 'low'>('all');
   const [filterStatus, setFilterStatus] = useState<'all' | 'draft' | 'submitted' | 'approved' | 'active' | 'completed'>('all');

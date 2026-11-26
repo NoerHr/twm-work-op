@@ -10,3 +10,10 @@
 # Ignore node_modules in frontend
 frontend/node_modules/
 
+
+# Kecuali folder .github (Pages workflow)
+!/.github/
+
+# Ignore build output
+frontend/build/
+frontend/dist/

@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, Circle, BookOpen } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-import type { UserRole } from '../../types/user';
+import type { UserRole } from '../../store/authStore';
 
 interface QuickStartGuideProps {
   role: UserRole;

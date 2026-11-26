@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
 import { Badge } from '../ui/Badge';
-import type { UserRole } from '../../types/user';
+import type { UserRole } from '../../store/authStore';
 
 interface WorkflowGuideProps {
   currentRole: UserRole;

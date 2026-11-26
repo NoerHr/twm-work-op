@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Plus, Calendar, ChevronDown, ZoomIn, ZoomOut, Edit2, Circle } from 'lucide-react';
 import { useWorkflowStore } from '../../store/workflowStore';
 import { StageConfigModal } from './StageConfigModal';
-import type { WorkflowNode as WorkflowNodeType } from '../../types/workflow';
+import type { WorkflowNode as WorkflowNodeType } from '../../store/workflowStore';
 
 interface WorkflowBuilderProps {
   projectId?: string;

@@ -18,7 +18,8 @@ import { useUserStore } from '../store/userStore';
 import { GlassCard } from '../components/ui/GlassCard';
 import { Button } from '../components/ui/Button';
 import { Badge } from '../components/ui/Badge';
-import type { UserProfile, UserRole } from '../types/auth';
+import type { UserProfile } from '../store/userStore';
+import type { UserRole } from '../store/authStore';
 
 // Role and Status Colors
 const ROLE_COLORS: Record<UserRole, string> = {
